@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.container_max {
+    @apply w-[1420px]
+}
+
+.low_container {
+    @apply w-[300px] low:w-[400px]
+}
+
+.container_def {
+    @apply w-[1240px]
+}
+
+.container_desctop {
+    @apply w-[760px]
+}
+
+.container_mobile {
+    @apply w-[350px]
+}
+
+.container_smallMobile {
+    @apply w-[300px]
+}
+
+.all_center {
+    @apply flex justify-center items-center
+}
+
+.text_futter_16 {
+    @apply font-robotoMono text-[16px] tracking-[1.6px] text-dullGrey font-normal
+}
+
+.collection_grid_container {
+    @apply bg-center bg-no-repeat bg-cover  w-full h-[382px] desk:h-[604px] mobile:p-[25px] small:p-[6px] small:h-[214px] p-[25px] desk:p-[50px]
+}
+
+.collection_grid_title {
+    @apply font-robotoMono text-gainsborough text-[20px] small:text-[14px] desk:text-[24px] tracking-[3px] desk:tracking-[3.6px] mb-[8px] desk:mb-[10px] font-normal
+}
+
+.collection_grid_description {
+    @apply font-robotoMono text-gainsborough text-[20px] small:text-[12px] desk:text-[24px] small:tracking-[1.8px] tracking-[3px] desk:tracking-[3.6px] mb-[8px] desk:mb-[10px] font-normal
+}
+
+.project_container_price {
+    @apply flex flex-col gap-[10px] small:gap-0 items-start desk:items-end bad:flex-row
+}
